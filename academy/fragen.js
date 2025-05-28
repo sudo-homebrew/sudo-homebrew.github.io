@@ -25,7 +25,7 @@ function areAllElementsEqual(arr) {
     }
 }
 
-  function findTwoLargestWithIndex(arr) {
+function findTwoLargestWithIndex(arr) {
     var largest = { index: -1, value: Number.MIN_SAFE_INTEGER };
     var secondLargest = { index: -1, value: Number.MIN_SAFE_INTEGER };
 
@@ -98,8 +98,12 @@ function resultPage(){
 
     var isJoke = areAllElementsEqual(ans);
 
-    topTwoResult = findTwoLargestWithIndex(ans);
-    localStorage.setItem("topTwoResult", JSON.stringify(topTwoResult));
+//     topTwoResult = findTwoLargestWithIndex(ans);
+//     localStorage.setItem("topTwoResult", JSON.stringify(topTwoResult));
+    const sortedAns = ans
+      .map((value, index) => ({ index, value }))
+      .sort((a, b) => b.value - a.value);
+    localStorage.setItem("sortedAns", JSON.stringify(sortedAns));
     localStorage.setItem("isJoke", JSON.stringify(isJoke));
     window.location.href = 'result.html';
 }
