@@ -3766,12 +3766,14 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .modal-popup {
     max-width        : 680px;
+    max-height       : 80vh;
     background-color : white;
     font-size        : calc(var(--text-size) * 0.9447);
     line-height      : var(--vspace-0_875);
     color            : rgba(0, 0, 0, 0.75);
     overflow-y       : auto;
     position         : relative;
+    padding-bottom   : 4rem;
 }
 
 .modal-popup img {
@@ -3828,7 +3830,7 @@ img.u-pull-left {
 .modal-popup__cat li:last-child::after {
     display : none;
 }
-
+/*
 .modal-popup__details {
     background-color : rgba(0, 0, 0, 0.3);
     font-size        : var(--text-xs);
@@ -3838,6 +3840,18 @@ img.u-pull-left {
     position         : absolute;
     top              : var(--vspace-1);
     left             : var(--vspace-1);
+}
+*/
+.modal-popup__details {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: var(--text-xs);
+  line-height: var(--vspace-1_25);
+  color: white;
+  padding: 0 1.2rem;
 }
 
 .modal-popup__details:focus,
