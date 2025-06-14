@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragen</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #212121;
+            color: #FFFFFF;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top left;
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 30vh;
+            font-size: 35px;
+        }
+
+        .parent-container {
+            position: relative;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.btns {
+            margin-top: 5vh;
+        }
+
+        button {
+            width: 200px;
+            height: 60px;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 2vh;
+            background-color: #2C2C2C;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+
+        button.back {
+            width: 150px;
+            height: 40px;
+            display: inline-block;
+            position: fixed;
+            bottom: 6vh;
+            left: 1vw;
+            background-color: #333;
+            color: #fff;
+        }
+
+        p.cur_page {
+            position: fixed;
+            bottom: 6vh;
+            right: 1vw;
+            font-size: 30px;
+            color: #797979;
+            font-weight: bold;
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        .parent-container {
+                position: fixed;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div.btns {
+                margin-top: 5vh;
+            }
+
+            button {
+                width: 200px;
+                height: 60px;
+                font-size: 16px;
+                font-weight: bold;
+                margin: 2vh;
+                background-color: #2C2C2C;
+                color: #ffffff;
+                border-radius: 10px;
+            }
+        
+        
+        .s-footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .row {
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .ss-copyright {
+            text-align: left;
+        }
+
+        .ss-go-top {
+            text-align: right;
+        }
+
+        .ss-go-top a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        @media (min-width: 1290px) {
+            h1 {
+                font-size: 35px;
+            }
+        }
+
+        
+        @media (max-width: 1289px) {
+            body {
+                margin: 0;
+            }
+            h1 {
+                font-size: 25px;
+            }
+            button.back {
+                width: 150px;
+                height: 40px;
+                display: inline-block;
+                position: fixed;
+                bottom: 10vh;
+                left: 1vw;
+                background-color: #333;
+                color: #fff;
+            }
+
+            p.cur_page {
+                position: fixed;
+                bottom: 10vh;
+                right: 1vw;
+                font-size: 30px;
+                color: #797979;
+                font-weight: bold;
+                font-family: 'Helvetica', sans-serif;
+            }
+            .row {
+                font-size: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <h1 class="query">query test</h1>
+
+    <div class="parent-container">
+        <div class="btns">
+            <button class="yes" onclick="yesListener()">Yes</button>
+            <button class="no" onclick="noListener()">No</button>
+        </div>
+    </div>
+    
+    <button class="back" onclick="backListener()">이전 질문</button>
+    <p class="cur_page">page num test</p>
+
+    <footer class="s-footer">
+
+        <div class="row">
+            <div class="column ss-copyright">
+                <span>© Copyright Seunghyeop Nam 2025</span>
+                <span>Design by <a href="../index.html" style="color: #8AEA6C;" target="_blank">Seunghyop Nam</a></span>
+            </div>
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="fragen.js"></script>
+</body>
+</html>

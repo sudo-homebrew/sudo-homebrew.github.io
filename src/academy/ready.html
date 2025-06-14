@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willkommen</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #212121;
+            color: #FFFFFF;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top left;
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        .parent-container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.scrips {
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: red;
+        }
+
+        h3 {
+            margin-top: 10px;
+            color: #797979;
+        }
+
+        a button {
+            width: 150px;
+            height: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #2C2C2C;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .s-footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .row {
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .ss-copyright {
+            text-align: left;
+        }
+
+        .ss-go-top {
+            text-align: right;
+        }
+
+        .ss-go-top a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 1289px) {
+            body {
+                margin: 0;
+            }
+            h1 {
+                font-size: 25px;
+            }
+            .row {
+                font-size: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="scrips">
+            <h1>마루학원 학습유형 검사에 오신것을 환영합니다!</h1>
+            <br><br>
+            
+            <h2>유의사항</h2>
+            <h3>
+                모든 답변은 개인적인 경험과 생각에 기반하여 자유롭게 답해주세요.<br>
+                주관적인 의견이므로 정답이나 오답이 없습니다. 솔직한 응답이 가장 중요합니다.<br>
+                답변 내용은 완전히 익명이며, 향후에도 개인 정보로 사용되지 않습니다.
+            </h3>
+
+            <a href="fragen.html">
+                <button>숙지하였습니다</button>
+            </a>
+        </div>
+    </div>
+
+    <footer class="s-footer">
+
+        <div class="row">
+            <div class="column ss-copyright">
+                <span>© Copyright Seunghyeop Nam 2025</span>
+                <span>Design by <a href="../index.html" style="color: #8AEA6C;" target="_blank">Seunghyop Nam</a></span>
+            </div>
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
