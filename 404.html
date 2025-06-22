@@ -20,7 +20,13 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	    overflow: hidden
         }
+	img{
+	    width: 100%;
+  	    height: auto;
+  	    object-fit: cover;
+	}
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
@@ -46,8 +52,9 @@
 <body>
     <div class="container">
         <h1>404 Not Found</h1>
-        <p>Error : 404 Page Not Found</p>
-        <p>You are accessing wrong page or url is invaled</p>
+        <p>Error : Oops! We can't seem to find the page you're looking for.</p>
+	<img src="images/404.png" alt="404 Not Found">
+        <p>It looks like the page you’re trying to reach doesn’t exist or might have been relocated.</p>
         <p><a href="/">Go to Home</a></p>
     </div>
 </body>
